@@ -9,5 +9,6 @@ export const Header = h('header.header#header', [
       h('li.navigation--list--item.navigation--sobre', 'Sobre'),
     ]),
   ]),
-  h("button.scrollBtn#scrollBtn","▲")
+  h('button.scrollBtn#scrollBtn', '▲'),
+  h('button.returnBtn#returnBtn.disable', '◀'),
 ]);
