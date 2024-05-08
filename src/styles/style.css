@@ -23,6 +23,9 @@ html::-webkit-scrollbar-thumb {
   background-color: var(--GS-Dark-gray);
   border-radius: 3px;
 }
+body{
+  font-family: "Quicksand", Verdana, Geneva, Tahoma, sans-serif;
+}
 .header,
 .home,
 .about,
