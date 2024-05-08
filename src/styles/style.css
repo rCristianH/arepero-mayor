@@ -46,7 +46,7 @@ html::-webkit-scrollbar-thumb {
   left: 70px;
   bottom: 10px;
 }
-.scrollBtn:hover,
+.scrollBtn:hover,.returnBtn:hover
 .navigation--list--item:hover,
 .products--view-more:hover {
   opacity: 0.7;
