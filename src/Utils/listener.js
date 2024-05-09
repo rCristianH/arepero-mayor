@@ -11,6 +11,7 @@ const Listeners = () => {
         '.about',
         '.contact-sect',
         '.returnBtn',
+        '.sectionAllProducts'
       ]);
     }
     if (e.contains('navigation--products')) {
@@ -20,6 +21,7 @@ const Listeners = () => {
         '.about',
         '.contact-sect',
         '.returnBtn',
+        '.sectionAllProducts'
       ]);
     }
     if (e.contains('navigation--sobre')) {
@@ -40,6 +42,7 @@ const Listeners = () => {
         '.about',
         '.contact-sect',
         '.returnBtn',
+        '.sectionAllProducts'
       ]);
     }
   });

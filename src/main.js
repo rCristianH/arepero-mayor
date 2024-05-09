@@ -5,6 +5,7 @@ import { About } from './templates/About/About'
 import { Footer } from './templates/Footer/Footer'
 import { Header } from './templates/Header/Header'
 import { Home } from './templates/Home/Home'
+import { AllProducts } from './templates/Products/AllProducts'
 import { Products } from './templates/Products/Products'
 
 
@@ -13,6 +14,7 @@ $root.appendChild(Home)
 $root.appendChild(Products)
 $root.appendChild(About)
 $root.appendChild(Footer)
+$root.appendChild(AllProducts)
 
 Listeners()
 
