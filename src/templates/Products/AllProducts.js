@@ -1,4 +1,4 @@
-import h from "hyperscript";
+import h from 'hyperscript';
 
 const GetStock = () => {
   const dataInLs = localStorage.getItem('data');
@@ -22,9 +22,80 @@ const GetStock = () => {
 };
 let productos = GetStock();
 
-export const AllProducts = h(
-  "main.sectionAllProducts.disable"
-)
+export const AllProducts = h('main.sectionAllProducts.disable', [
+  h('section.allProducts--section__arepas', [
+    h('h2.allProducts__title', 'Arepas'),
+    h(
+      'section.allProducts--cards-container.allProducts--cards-container__arepas',
+      [
+        h('article.cardProduct.card__arepas', [
+          h('picture.card--picture', h('img', { src: '', alt: '' })),
+          h('section.card--section--info', [
+            h('div.card--info.card--info--name',[
+              h("p.card--info-name--p","Name Producto"),
+              h("button.material-icons.card--name--btn.card--info-name--btn","question_mark")
+            ]),
+            h('div.card--info.card--info--price',[
+              h("p.card--info-price--p","price product"),
+              h("button.material-icons.card--price--btn.card-info-price--btn","shopping_cart")
+            ]),
+            h('div.card--info--additional',[
+              h("button.card--add--btn.card--info-additional--btn","Adición")
+            ])
+          ]),
+        ]),
+      ]
+    ),
+  ]),
+  h('section.allProducts--section__drinks', [
+    h('h2.allProducts__title', 'Bebidas'),
+    h(
+      'section.allProducts--cards-container.allProducts--cards-container__drinks',
+      [
+        h('article.cardProduct.card__arepas', [
+          h('picture.card--picture', h('img', { src: '', alt: '' })),
+          h('section.card--section--info', [
+            h('div.card--info.card--info--name',[
+              h("p.card--info-name--p","Name Producto"),
+              h("button.material-icons.card--name--btn.card--info-name--btn","question_mark")
+            ]),
+            h('div.card--info.card--info--price',[
+              h("p.card--info-price--p","price product"),
+              h("button.material-icons.card--price--btn.card-info-price--btn","shopping_cart")
+            ]),
+            h('div.card--info--additional',[
+              h("button.card--add--btn.card--info-additional--btn","Adición")
+            ])
+          ]),
+        ]),
+      ]
+    ),
+  ]),
+  h('section.allProducts--section__eggs', [
+    h('h2.allProducts__title', 'Huevos'),
+    h(
+      'section.allProducts--cards-container.allProducts--cards-container__eggs',
+      [
+        h('article.cardProduct.card__arepas', [
+          h('picture.card--picture', h('img', { src: '', alt: '' })),
+          h('section.card--section--info', [
+            h('div.card--info.card--info--name',[
+              h("p.card--info-name--p","Name Producto"),
+              h("button.material-icons.card--name--btn.card--info-name--btn","question_mark")
+            ]),
+            h('div.card--info.card--info--price',[
+              h("p.card--info-price--p","price product"),
+              h("button.material-icons.card--price--btn.card-info-price--btn","shopping_cart")
+            ]),
+            h('div.card--info--additional',[
+              h("button.card--add--btn.card--info-additional--btn","Adición")
+            ])
+          ]),
+        ]),
+      ]
+    ),
+  ]),
+]);
 const getProducts = (type, container) => {
   const nodes = createProducts(type);
   const cont = document.querySelector(container);
@@ -36,7 +107,6 @@ const createProducts = (type, container) => {
   const nodes = [];
   productos[type].forEach((e) => {
     if (e.input == 'input') {
-      
     }
   });
 };

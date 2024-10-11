@@ -23,7 +23,7 @@ html::-webkit-scrollbar-thumb {
   background-color: var(--GS-Dark-gray);
   border-radius: 3px;
 }
-body{
+body {
   font-family: "Quicksand", Verdana, Geneva, Tahoma, sans-serif;
 }
 .header,
@@ -45,13 +45,21 @@ body{
   box-shadow: var(--elevation);
   z-index: 1;
 }
-.returnBtn {
-  left: 70px;
-  bottom: 10px;
+.scrollBtn {
+  rotate: 90deg;
 }
-.scrollBtn:hover,.returnBtn:hover,
+.returnBtn {
+  left: 10px;
+}
+.scrollBtn:hover,
+.returnBtn:hover,
 .navigation--list--item:hover,
-.products--view-more:hover {
+.products--view-more:hover,
+.card--name--btn:hover,
+.card--price--btn:hover,
+.card--add--btn:hover,
+.modalAdd--article--btn:hover,
+.modalAdd--close:hover {
   opacity: 0.7;
 }
 .products--view-more {
@@ -191,6 +199,144 @@ body{
   padding-left: 20px;
   padding-top: 20px;
   gap: 10px;
+}
+.sectionAllProducts {
+  background-color: var(--GS-Light-gray);
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 80px;
+}
+.allProducts--cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 900px;
+}
+.allProducts__title {
+  margin: 20px 0;
+}
+.cardProduct {
+  background-color: var(--GS-Dark-gray);
+  height: 400px;
+  aspect-ratio: 2/3;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.card--picture {
+  height: 200px;
+  aspect-ratio: 1/1;
+  background-color: var(--GS-Medium-gray);
+  border-radius: 12px;
+}
+.card--section--info {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.card--info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  font-weight: 700;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.card--name--btn,
+.card--price--btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: var(--elevation);
+}
+.card--add--btn {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: var(--elevation);
+  font-weight: 500;
+  font-size: 20px;
+}
+.modalAdd {
+  height: 80vh;
+  background-color: #222222;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.modalAdd--msg-box {
+  background-color: #666666;
+  width: 60%;
+  padding: 28px;
+  min-width: 350px;
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 24px 24px 0 0;
+}
+.modalAdd--msg-box--p {
+  text-align: center;
+}
+.modalAdd--content {
+  border-radius: 0 0 24px 24px;
+  width: 60%;
+  min-width: 350px;
+  max-width: 600px;
+  background-color: #999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 28px;
+  padding: 10px 0;
+}
+.modalAdd--content--article {
+  width: 45%;
+  height: 80px;
+  background-color: #dedede;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 12px;
+}
+.modalAdd--article--info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: min-content;
+}
+.modalAdd--article--p {
+  text-align: center;
+}
+.modalAdd--article--price {
+  font-weight: 700;
+}
+.modalAdd--article--btn,
+.modalAdd--close {
+  width: 40px;
+  height: 40px;
+  border-radius: 14px;
+  border: none;
+  box-shadow: var(--elevation);
+}
+.modalAdd--close {
+  position: absolute;
+  top: -15px;
+  right: -15px;
 }
 .disable {
   display: none;

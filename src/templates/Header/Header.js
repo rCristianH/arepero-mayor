@@ -9,6 +9,6 @@ export const Header = h('header.header#header', [
       h('li.navigation--list--item.navigation--sobre', 'Sobre'),
     ]),
   ]),
-  h('button.scrollBtn#scrollBtn', '▲'),
-  h('button.returnBtn#returnBtn.disable', '◀'),
+  h('button.material-icons.scrollBtn#scrollBtn', 'arrow_back_ios_new'),
+  h('button.material-icons.returnBtn#returnBtn.disable', 'arrow_back_ios_new'),
 ]);
