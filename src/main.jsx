@@ -1,4 +1,14 @@
-const $root = document.querySelector('#app')
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import { App } from './Pages/App';
+import '../src/styles/style.css';
+
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    <App/>
+  </StrictMode>,
+);
+/* const $root = document.querySelector('#app')
 import Listeners from './Utils/listener'
 import { toggleItems } from './Utils/navigation'
 import './styles/style.css'
@@ -30,18 +40,4 @@ toggleItems([
 
 Listeners()
 
-if ("serviceWorker" in navigator) {
-  window.addEventListener("load", function () {
-    navigator.serviceWorker.register("../sw.js").then(
-      function (registration) {
-        console.log(
-          "ServiceWorker registration successful with scope: ",
-          registration.scope
-        );
-      },
-      function (err) {
-        console.log("ServiceWorker registration failed: ", err);
-      }
-    );
-  });
-}
+ */
